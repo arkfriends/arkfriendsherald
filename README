@@ -1,7 +1,7 @@
 This is software for operating a low cost multi-purpose e-signage
 solution driven as the primary display of a dedicated Windows XP box.
 
-There are 3 components to this system:
+There are 3 controllers to this system:
 1) Database interface: allows privileged users to identify content,
    type, priority, duration, and location of news items to be displayed.
 2) Scheduler: combs the database looking for valid content ready for display
