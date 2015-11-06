@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <title>Messaging system</title>
+    <style type="text/css">
+  
+body {
+    font-family: Arial;
+    background-color: #6699ff;
+    line-height: 20px;
+}
+
+.container {
+    xmin-width: 900px;
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+     background-color: #3366cc;
+    border-color: #3366cc;
+    border: 3px;
+}
+
+#top {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 32px;    
+}
+
+#top h1 {
+    margin:0;
+    line-height: 50px;
+}
+
+#menubar {
+    width: 200px;
+    margin-right: 5%;
+    float: right;
+}
+
+#main {
+    padding: 10px;
+    background-color: #ffffff;
+    font: Verdana;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#main h1, #main h2 {
+    color: #3366cc;
+}
+
+#sidebar {
+    background-color: #ccddff;
+    color: #3649d1;
+    padding: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 90%;
+}
+
+#bottom {
+    text-align: center;
+    padding: 20px 20px 5px 5px;
+    font-size: 70%;
+    color: #ffffff;
+   line-height: 32px;    
+}
+
+#menulist {
+    padding:0;
+    font: 16px verdana;
+    font-weight: bolder;
+}
+
+.menuitem {
+    width: 170px;
+    background-color: #3366cc;
+    border: 1px solid #3366cc;
+    border-radius: 40px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+    color: #3648d1;
+}
+
+a {
+    color: #3648d1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container wrapper">
+      <div id="top">
+        <h1>The Herald</h1>
+        <p> Managing the distribution of newsfeeds to web browsers.</p>
+      </div>
+      <div class="wrapper">
+        <div id="menubar">
+          <ul id="menulist">
+            <li class="menuitem">Administration</li>
+            <li class="menuitem">News Viewer</li>
+            <li class="menuitem">Content Manager</li>
+          </ul>
+        </div>
+        <div id="main">
+          <h1>Components of the System</h1>
+        
+          <p> This system comprizes of 3 components and a databse to support these functions:</p>
+          <ul>
+             <li> The Administration unit: 
+                contains the kill switch, emergency message, the services scheduler 
+             <li> The Viewing Streamer: 
+                 provides the html content in measured type units</li>
+             <li> The Content Manager: 
+                provides the means to add new content to the system </li>
+          </ul>
+        </div>
+        <div id="sidebar">
+          <p>The Herald is a service of the Payap University Office of Information Technology and
+            Educational Innovation in collaboration with the Office of University Communications</p>
+        </div>
+        <div id="bottom">
+          <p>&copy; Copyright 2015 Payap University. All rights reserved</p>
+        </div>
+      </div>
+    </div>      
+  </body>
+</hmtl>
