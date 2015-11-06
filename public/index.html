@@ -28,7 +28,7 @@ body {
     color: #ffffff;
     padding: 15px;
     font-size: 30px;
-    line-height: 32px;    
+    line-height: 36px;    
 }
 
 #top h1 {
@@ -52,15 +52,22 @@ body {
 
 #main h1, #main h2 {
     color: #3366cc;
+  line-height: 28px;
+}
+      
+#main dl dt {
+ font-weight:bold;
+ color: #3366CC;
 }
 
 #sidebar {
-    background-color: #ccddff;
-    color: #3649d1;
+    background-color: #99ccff;
+    color: #003399;
     padding: 10px;
     margin-left: 2%;
     margin-right: 2%;
     font-size: 90%;
+    text-align:center;
 }
 
 #bottom {
@@ -123,18 +130,19 @@ a:hover {
           <h1>Components of the System</h1>
         
           <p> This system comprizes of 3 components and a databse to support these functions:</p>
-          <ul>
-             <li> The Administration unit: 
-                contains the kill switch, emergency message, the services scheduler 
-             <li> The Viewing Streamer: 
-                 provides the html content in measured type units</li>
-             <li> The Content Manager: 
-                provides the means to add new content to the system </li>
-          </ul>
+          <dl>
+             <dt> The Administration unit: </dt>
+            <dd>contains the kill switch, emergency message, the services scheduler </dd>
+             <dt> The Viewing Streamer:</dt>
+               <dd> provides the html content in measured type units</dd>
+            <dt> The Content Manager:</dt> 
+              <dd> provides the means to add new content to the system </dd>
+          </dl>
         </div>
         <div id="sidebar">
-          <p>The Herald is a service of the Payap University Office of Information Technology and
-            Educational Innovation in collaboration with the Office of University Communications</p>
+          <p>The Herald is a collaborative service at Payap University
+            between the Office of Information Technology and
+            Educational Innovation and the Office of University Communications</p>
         </div>
         <div id="bottom">
           <p>&copy; Copyright 2015 Payap University. All rights reserved</p>
