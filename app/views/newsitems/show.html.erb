@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @newsitem.content %>
+</p>
+
+<%= link_to 'Edit', edit_newsitem_path(@newsitem) %> |
+<%= link_to 'Back', newsitems_path %>
