@@ -6,6 +6,10 @@ body {
   line-height: 18px;
 }
 
+th {
+  color: #39c;
+}
+
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -66,4 +70,9 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
