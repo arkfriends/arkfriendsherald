@@ -2,14 +2,40 @@
 <html>
 <head>
   <title>Herald</title>
-  <link rel="stylesheet" type="text/css" href="heraldstyle.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" type="text/css" href="heraldstyle.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+   <div class="container wrapper">
+       <div id="top" style="padding-bottom:0px;">
+        <img src="herald.png" alt="project logo" align="left" width="150px" style="margin-right:20px;"/>
+        <h1>The Herald</h1>
+        <p> A web-based, news content manager for electronic signage.</p>
+         <div id="hmenubar">
+          <ul id="menulist">
+            <li class="hmenuitem" onclick="window.open('/staffs');">Administration</li>
+            <li class="hmenuitem" onclick="window.open('/newsitems');">Content Manager</li>
+            <li class="hmenuitem">News Scheduler</li>
+            <li class="hmenuitem">Viewing Streamer</li>
+        </ul>
+           <br clear="all"/>
+        </div>
+      </div>
+       <div class="wrapper">
+       <div id="main">
 <%= yield %>
-
+       </div>
+       <div id="sidebar">
+          <p>The Herald is a collaborative service at Payap University
+            between the Office of Information Technology and
+            Educational Innovation and the Office of University Communications</p>
+        </div>
+        <div id="bottom">
+          <p>&copy; Copyright 2015 Payap University. All rights reserved</p>
+        </div>
+  </div>
 </body>
 </html>
