@@ -3,15 +3,13 @@ solution driven as the primary display of a dedicated web browsers.
 
 There are 4 controllers to this system
 1) Content manager: allows privileged users to identify content,
-   type, priority, duration, and location of news items to be displayed.
+   type, priority, duration, and location of news items to be displayed.
 2) Scheduler: combs the database looking for valid content ready for display
-   and develops the hot list for the content being queued
+   and develops the hot list for the content being queued
 3) Viewer: reads the hot list, calls the appropriate display service to
-   display the next item and closes the display when the item show is over.
-4) Administration: allows the overall control of the service
+   display the next item and closes the display when the item show is over.
+4) Administration: allows the overall control of the service.
 
-Supports news items developed in Powerpoint, HTML, RSS, PDF, JPG, GIF, TXT   
+This system supports news items in the following file formats: Powerpoint PPTX, HTML, RSS, PDF, JPG, GIF, PNG, TXT 
 
-Choosing messages
-
-Messages are given priority value 
+Scheduling messages: The messages are displayed according to a scheduled play list that is assembled randomly. The reciprocal of the newsitem priority is the relative probability of being chosen for display. this insures that top news items have greater air time.
