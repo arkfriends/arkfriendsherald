@@ -13,3 +13,5 @@ There are 4 controllers to this system
 This system supports news items in the following file formats: Powerpoint PPTX, HTML, RSS, PDF, JPG, GIF, PNG, TXT 
 
 Scheduling messages: The messages are displayed according to a scheduled play list that is assembled randomly. The reciprocal of the newsitem priority is the relative probability of being chosen for display. this insures that top news items have greater air time.
+
+This is a test
