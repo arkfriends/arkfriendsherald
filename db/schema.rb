@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151111201843) do
+ActiveRecord::Schema.define(version: 20151112095835) do
+
+  create_table "holidays", force: true do |t|
+    t.string   "holidayname"
+    t.date     "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "newsitems", force: true do |t|
     t.string   "title"
@@ -22,6 +29,24 @@ ActiveRecord::Schema.define(version: 20151111201843) do
     t.date     "starting"
     t.date     "ending"
     t.integer  "staff_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "newstypes", force: true do |t|
+    t.string   "extension"
+    t.string   "viewer"
+    t.string   "jscript"
+    t.string   "pretags"
+    t.string   "posttags"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "operatinghours", force: true do |t|
+    t.integer  "dow"
+    t.time     "starting"
+    t.time     "ending"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,6 +64,13 @@ ActiveRecord::Schema.define(version: 20151111201843) do
     t.string   "login"
     t.string   "password"
     t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "viewings", force: true do |t|
+    t.integer  "newsitem_id"
+    t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

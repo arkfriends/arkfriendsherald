@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :dow %><br>
+    <%= f.label "Day of week:" %><br>
     <%= f.number_field :dow %>
   </div>
   <div class="field">
-    <%= f.label :starting %><br>
-    <%= f.date_select :starting %>
+    <%= f.label "Starting at:" %><br>
+    <%= select_hrmin(:starting) %>
   </div>
   <div class="field">
-    <%= f.label :ending %><br>
-    <%= f.date_select :ending %>
+    <%= f.label "Ending at:" %><br> 
+    <%= select_hrmin(:ending) %>
   </div>
   <div class="actions">
     <%= f.submit %>
