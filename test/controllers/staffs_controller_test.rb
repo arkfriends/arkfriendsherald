@@ -18,7 +18,7 @@ class StaffsControllerTest < ActionController::TestCase
 
   test "should create staff" do
     assert_difference('Staff.count') do
-      post :create, staff: { admin: @staff.admin }
+      post :create, staff: { login: @staff.login, name: @staff.name, password: @staff.password, role_id: @staff.role_id }
     end
 
     assert_redirected_to staff_path(assigns(:staff))
@@ -35,7 +35,7 @@ class StaffsControllerTest < ActionController::TestCase
   end
 
   test "should update staff" do
-    patch :update, id: @staff, staff: { admin: @staff.admin }
+    patch :update, id: @staff, staff: { login: @staff.login, name: @staff.name, password: @staff.password, role_id: @staff.role_id }
     assert_redirected_to staff_path(assigns(:staff))
   end
 

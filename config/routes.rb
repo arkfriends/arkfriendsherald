@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :news_items
+
   resources :roles
 
   resources :newsitems

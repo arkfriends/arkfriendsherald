@@ -12,8 +12,40 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_field :content %>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :filename %><br>
+    <%= f.text_field :filename %>
+  </div>
+  <div class="field">
+    <%= f.label :filetype_id %><br>
+    <%= f.number_field :filetype_id %>
+  </div>
+  <div class="field">
+    <%= f.label :priority %><br>
+    <%= f.number_field :priority %>
+  </div>
+  <div class="field">
+    <%= f.label :zone_id %><br>
+    <%= f.number_field :zone_id %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.number_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :starting %><br>
+    <%= f.date_select :starting %>
+  </div>
+  <div class="field">
+    <%= f.label :ending %><br>
+    <%= f.date_select :ending %>
+  </div>
+  <div class="field">
+    <%= f.label :staff_id %><br>
+    <%= f.number_field :staff_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -1,5 +1,5 @@
 class CreateRoles < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :roles do |t|
       t.string :name
       t.string :description
@@ -7,5 +7,9 @@ class CreateRoles < ActiveRecord::Migration
 
       t.timestamps
     end
+  end
+  
+  def self.down
+    drop_table :roles
   end
 end

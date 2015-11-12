@@ -1,8 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Admin:</strong>
-  <%= @staff.admin %>
+  <strong>Name:</strong>
+  <%= @staff.name %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @staff.login %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @staff.password %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @staff.role_id %>
 </p>
 
 <%= link_to 'Edit', edit_staff_path(@staff) %> |

@@ -1,8 +1,48 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Content:</strong>
-  <%= @newsitem.content %>
+  <strong>Title:</strong>
+  <%= @newsitem.title %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @newsitem.filename %>
+</p>
+
+<p>
+  <strong>Filetype:</strong>
+  <%= @newsitem.filetype_id %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @newsitem.priority %>
+</p>
+
+<p>
+  <strong>Zone:</strong>
+  <%= @newsitem.zone_id %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @newsitem.duration %>
+</p>
+
+<p>
+  <strong>Starting:</strong>
+  <%= @newsitem.starting %>
+</p>
+
+<p>
+  <strong>Ending:</strong>
+  <%= @newsitem.ending %>
+</p>
+
+<p>
+  <strong>Staff:</strong>
+  <%= @newsitem.staff_id %>
 </p>
 
 <%= link_to 'Edit', edit_newsitem_path(@newsitem) %> |

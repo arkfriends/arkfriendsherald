@@ -18,7 +18,7 @@ class NewsitemsControllerTest < ActionController::TestCase
 
   test "should create newsitem" do
     assert_difference('Newsitem.count') do
-      post :create, newsitem: { content: @newsitem.content }
+      post :create, newsitem: { duration: @newsitem.duration, ending: @newsitem.ending, filename: @newsitem.filename, filetype_id: @newsitem.filetype_id, priority: @newsitem.priority, staff_id: @newsitem.staff_id, starting: @newsitem.starting, title: @newsitem.title, zone_id: @newsitem.zone_id }
     end
 
     assert_redirected_to newsitem_path(assigns(:newsitem))
@@ -35,7 +35,7 @@ class NewsitemsControllerTest < ActionController::TestCase
   end
 
   test "should update newsitem" do
-    patch :update, id: @newsitem, newsitem: { content: @newsitem.content }
+    patch :update, id: @newsitem, newsitem: { duration: @newsitem.duration, ending: @newsitem.ending, filename: @newsitem.filename, filetype_id: @newsitem.filetype_id, priority: @newsitem.priority, staff_id: @newsitem.staff_id, starting: @newsitem.starting, title: @newsitem.title, zone_id: @newsitem.zone_id }
     assert_redirected_to newsitem_path(assigns(:newsitem))
   end
 

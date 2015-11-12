@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151110185035) do
+ActiveRecord::Schema.define(version: 20151111201843) do
 
   create_table "newsitems", force: true do |t|
     t.string   "title"
     t.string   "filename"
-    t.string   "filetype_id"
+    t.integer  "filetype_id"
     t.integer  "priority"
     t.integer  "zone_id"
     t.integer  "duration"
     t.date     "starting"
     t.date     "ending"
-    t.date     "staff_id"
+    t.integer  "staff_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,10 +36,12 @@ ActiveRecord::Schema.define(version: 20151110185035) do
   end
 
   create_table "staffs", force: true do |t|
-    t.string  "name"
-    t.string  "login"
-    t.string  "password"
-    t.integer "role_id"
+    t.string   "name"
+    t.string   "login"
+    t.string   "password"
+    t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
