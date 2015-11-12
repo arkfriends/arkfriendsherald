@@ -1,0 +1,25 @@
+<%= form_for(@viewing) do |f| %>
+  <% if @viewing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@viewing.errors.count, "error") %> prohibited this viewing from being saved:</h2>
+
+      <ul>
+      <% @viewing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :newsitem_id %><br>
+    <%= f.number_field :newsitem_id %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.datetime_select :time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

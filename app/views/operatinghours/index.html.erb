@@ -1,0 +1,29 @@
+<h1>Listing operatinghours</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dow</th>
+      <th>Starting</th>
+      <th>Ending</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @operatinghours.each do |operatinghour| %>
+      <tr>
+        <td><%= operatinghour.dow %></td>
+        <td><%= operatinghour.starting %></td>
+        <td><%= operatinghour.ending %></td>
+        <td><%= link_to 'Show', operatinghour %></td>
+        <td><%= link_to 'Edit', edit_operatinghour_path(operatinghour) %></td>
+        <td><%= link_to 'Destroy', operatinghour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Operatinghour', new_operatinghour_path %>

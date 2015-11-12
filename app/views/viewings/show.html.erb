@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Newsitem:</strong>
+  <%= @viewing.newsitem_id %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @viewing.time %>
+</p>
+
+<%= link_to 'Edit', edit_viewing_path(@viewing) %> |
+<%= link_to 'Back', viewings_path %>

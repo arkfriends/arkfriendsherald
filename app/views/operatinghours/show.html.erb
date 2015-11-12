@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dow:</strong>
+  <%= @operatinghour.dow %>
+</p>
+
+<p>
+  <strong>Starting:</strong>
+  <%= @operatinghour.starting %>
+</p>
+
+<p>
+  <strong>Ending:</strong>
+  <%= @operatinghour.ending %>
+</p>
+
+<%= link_to 'Edit', edit_operatinghour_path(@operatinghour) %> |
+<%= link_to 'Back', operatinghours_path %>

@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20151111201843) do
     t.string   "filename"
     t.integer  "filetype_id"
     t.integer  "priority"
-    t.integer  "zone_id"
     t.integer  "duration"
     t.date     "starting"
     t.date     "ending"

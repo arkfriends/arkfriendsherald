@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  holidayname: MyString
+  date: 2015-11-12
+
+two:
+  holidayname: MyString
+  date: 2015-11-12

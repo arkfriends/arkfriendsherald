@@ -1,0 +1,29 @@
+<%= form_for(@operatinghour) do |f| %>
+  <% if @operatinghour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@operatinghour.errors.count, "error") %> prohibited this operatinghour from being saved:</h2>
+
+      <ul>
+      <% @operatinghour.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dow %><br>
+    <%= f.number_field :dow %>
+  </div>
+  <div class="field">
+    <%= f.label :starting %><br>
+    <%= f.date_select :starting %>
+  </div>
+  <div class="field">
+    <%= f.label :ending %><br>
+    <%= f.date_select :ending %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

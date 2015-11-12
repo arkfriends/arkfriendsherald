@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dow: 1
+  starting: 2015-11-12
+  ending: 2015-11-12
+
+two:
+  dow: 1
+  starting: 2015-11-12
+  ending: 2015-11-12

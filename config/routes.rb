@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :viewings
+
+  resources :holidays
+
+  resources :operatinghours
+
+  resources :newstypes
+
   resources :news_items
 
   resources :roles

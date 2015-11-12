@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Extension:</strong>
+  <%= @newstype.extension %>
+</p>
+
+<p>
+  <strong>Viewer:</strong>
+  <%= @newstype.viewer %>
+</p>
+
+<p>
+  <strong>Jscript:</strong>
+  <%= @newstype.jscript %>
+</p>
+
+<p>
+  <strong>Pretags:</strong>
+  <%= @newstype.pretags %>
+</p>
+
+<p>
+  <strong>Posttags:</strong>
+  <%= @newstype.posttags %>
+</p>
+
+<%= link_to 'Edit', edit_newstype_path(@newstype) %> |
+<%= link_to 'Back', newstypes_path %>
